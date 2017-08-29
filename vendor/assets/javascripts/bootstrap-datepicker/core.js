@@ -1180,6 +1180,7 @@
 			if (target.hasClass('today') && !target.hasClass('day')){
 				this.setViewMode(0);
 				this._setDate(UTCToday(), this.o.todayBtn === 'linked' ? null : 'view');
+        this._trigger('jumpToday', this.viewDate);
 			}
 
 			// Clicked on clear button
